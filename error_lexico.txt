@@ -1,0 +1,4 @@
+tablero ReporteInvalido {
+    fuente datos@externos tipo csv ruta "archivo.csv";
+    metrica valor = suma(campo#);
+}

@@ -1,0 +1,25 @@
+{
+  "name": "analizador_real",
+  "version": "1.0.0",
+  "description": "Analizador para Sintaxis y Semántica de Lenguajes",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "antlr4": "java -jar ./antlr-4.13.2-complete.jar -Dlanguage=JavaScript -visitor -o generated Tablero.g4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facufarinirodriguez-source/52104.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/facufarinirodriguez-source/52104/issues"
+  },
+  "homepage": "https://github.com/facufarinirodriguez-source/52104#readme",
+  "dependencies": {
+    "antlr4": "^4.13.2"
+  }
+}

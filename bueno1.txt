@@ -1,0 +1,7 @@
+tablero VentasAnuales {
+    fuente transacciones tipo csv ruta "data/2026.csv";
+    metrica totalVentas = suma(monto);
+    grafico tortaProductos { tipo = torta; usar = totalVentas; }
+    filtro categoria == "electronica";
+    alerta si totalVentas > 500000 entonces "Objetivo alcanzado";
+}

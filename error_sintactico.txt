@@ -1,0 +1,4 @@
+tablero {
+    fuente error tipo json ruta "config.json";
+    metrica fallo = contar(items)
+}
