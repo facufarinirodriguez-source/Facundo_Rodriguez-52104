@@ -6,7 +6,7 @@ import TableroParser from './generated/TableroParser.js';
 const archivoEntrada = process.argv[2] || 'input.txt';
 
 const input = fs.readFileSync(archivoEntrada, 'utf-8');
-const chars = new antlr4.InputStream(input);
+const chars = new antlr4.CharStream(input);
 
 
 const lexer = new TableroLexer(chars);
